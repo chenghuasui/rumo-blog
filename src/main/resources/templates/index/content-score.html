@@ -1,0 +1,36 @@
+<!-- Main Content -->
+<!-- Main Content -->
+
+总共有：${serverResponse.data.total}条记录，有${serverResponse.data.pages}页
+<div class="container">
+	<div class="row">
+
+		<!-- USE SIDEBAR -->
+		<!-- Post Container -->
+		<div class="
+              col-lg-8 col-lg-offset-1
+              col-md-8 col-md-offset-1
+              col-sm-12
+              col-xs-12
+              post-container
+          ">
+         
+          <#list serverResponse.data.list as blog>
+	          <div class="post-preview">
+					<a href="/article/essay/something-has-to-be-written/">
+						<h2 class="post-title">[${blog_index + 1}==>${blog.categoryName}] ${blog.title}</h2>
+						<h3 class="post-subtitle"></h3>
+						<div class="post-content-preview">${blog.description}</div>
+					</a>
+					<p class="post-meta" style="margin: 10px 0;">Posted by mofeng on ${(blog.createTime)?date}
+					=====
+					${(blog.createTime)?string("yyyy/MM/dd HH:mm")}
+					</p>
+					<div class="tags">
+						<a href="/tags/#随笔" title="随笔">${blog.categoryName}</a>
+					</div>
+				</div>
+          	</#list>
+		</div>	
+	</div>
+</div>

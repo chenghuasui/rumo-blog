@@ -1,0 +1,2 @@
+emment - http://emmet.io/eclipse/updates/
+zookeeper - http://www.massedynamic.org/eclipse/updates

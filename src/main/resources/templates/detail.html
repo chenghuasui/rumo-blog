@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>胡伟煌 | Blog</title>
+	<meta name="description" content="">
+	<meta name="keyword" content="">
+	<#include "commons/header.html"/>
+</head>
+<body>
+	<!-- Modified by Yu-Hsuan Yen -->
+	<!-- Post Header -->
+	<style type="text/css">
+		header.intro-header {
+			background-image: url('http://ozilwgpje.bkt.clouddn.com/scenery/building.jpg?imageslim')
+			/*post*/
+		}
+		
+		.note .post .comment-list {
+	padding-top: 20px
+}
+
+.note .post .comment-list .new-comment {
+	position: relative;
+	margin-left: 48px
+}
+
+.note .post .comment-list .new-comment .avatar {
+	position: absolute;
+	left: -48px
+}
+
+.note .post .comment-list .new-comment .sign-container,.note .post .comment-list .new-comment textarea {
+	padding: 10px 15px;
+	width: 100%;
+	height: 80px;
+	font-size: 13px;
+	border: 1px solid #dcdcdc;
+	border-radius: 4px;
+	background-color: hsla(0,0%,71%,.1);
+	resize: none;
+	display: inline-block;
+	vertical-align: top;
+	outline-style: none
+}
+
+.note .post .comment-list .new-comment .sign-container {
+	text-align: center
+}
+
+.note .post .comment-list .new-comment .btn-sign {
+	width: 78px;
+	margin: 11px 10px 0 0;
+	padding: 7px 18px;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	color: #fff!important;
+	background-color: #3194d0;
+	outline: none
+}
+
+.note .post .comment-list .new-comment .btn-sign:hover {
+	background-color: #187cb7
+}
+
+.note .post .comment-list .new-comment .write-function-block {
+	height: 50px
+}
+
+.note .post .comment-list .new-comment .write-function-block .emoji-modal {
+	left: -48px
+}
+
+.note .post .comment-list .new-comment .emoji {
+	float: left;
+	margin-top: 14px
+}
+
+.note .post .comment-list .new-comment .emoji i {
+	font-size: 20px;
+	color: #969696
+}
+
+.note .post .comment-list .new-comment .emoji i:hover {
+	color: #2f2f2f
+}
+
+.note .post .comment-list .new-comment .emoji-modal:after,.note .post .comment-list .new-comment .emoji-modal:before {
+	left: 48px
+}
+
+.note .post .comment-list .new-comment .hint {
+	float: left;
+	margin: 20px 0 0 20px;
+	font-size: 13px;
+	color: #969696
+}
+
+.note .post .comment-list .new-comment .btn-send {
+	float: right;
+	width: 78px;
+	margin: 10px 0;
+	padding: 8px 18px;
+	font-size: 16px;
+	border: none;
+	border-radius: 20px;
+	color: #fff!important;
+	background-color: #42c02e;
+	cursor: pointer;
+	outline: none;
+	display: block
+}
+
+.note .post .comment-list .new-comment .btn-send:hover {
+	background-color: #3db922
+}
+
+.note .post .comment-list .new-comment .cancel {
+	float: right;
+	margin: 18px 30px 0 0;
+	font-size: 16px;
+	color: #969696
+}
+
+.note .post .comment-list .new-comment .cancel:hover {
+	color: #2f2f2f
+}
+
+.note .post .comment-list .new-comment span {
+	font-size: 14px;
+	vertical-align: -7px
+}
+
+.note .post .comment-list .top-title {
+	padding-bottom: 20px;
+	font-size: 17px;
+	font-weight: 700;
+	border-bottom: 1px solid #f0f0f0
+}
+
+.note .post .comment-list .top-title span {
+	vertical-align: middle
+}
+
+.note .post .comment-list .comment {
+	padding: 20px 0 30px;
+	border-bottom: 1px solid #f0f0f0
+}
+
+.note .post .comment-list .comment:last-child {
+	border-bottom: none
+}
+
+.note .post .comment-list .comment p {
+	font-size: 16px
+}
+
+.note .post .comment-list .author {
+	margin-bottom: 15px
+}
+
+.note .post .comment-list .avatar {
+	margin-right: 5px;
+	width: 38px;
+	height: 38px;
+	vertical-align: middle;
+	display: inline-block
+}
+
+.note .post .comment-list .comment-wrap .comment-delete,.note .post .comment-list .comment-wrap .report {
+	float: right;
+	margin: 12px 0 0 10px;
+	display: none
+}
+
+.note .post .comment-list .comment-wrap:hover .comment-delete,.note .post .comment-list .comment-wrap:hover .report {
+	display: inherit
+}
+
+.note .post .comment-list p {
+	margin: 10px 0;
+	line-height: 1.5;
+	font-size: 16px;
+	word-break: break-word!important;
+	word-break: break-all
+}
+
+.note .post .comment-list p a,.note .post .comment-list p a:hover {
+	color: #3194d0
+}
+
+.note .post .comment-list .info {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.note .post .comment-list .name {
+	font-size: 15px;
+	color: #333
+}
+
+.note .post .comment-list .name:hover {
+	color: #2f2f2f
+}
+
+.note .post .comment-list .badge-icon {
+	height: 17px;
+	width: 17px
+}
+
+.note .post .comment-list .author-tag {
+	margin-left: 2px;
+	padding: 0 2px;
+	font-size: 12px;
+	color: #ea6f5a;
+	border: 1px solid #ea6f5a;
+	border-radius: 3px;
+	vertical-align: middle
+}
+
+.note .post .comment-list .meta {
+	font-size: 12px;
+	color: #969696
+}
+
+.note .post .comment-list .meta span {
+	margin-right: 6px
+}
+
+.note .post .comment-list .tool-group a {
+	margin-right: 10px;
+	font-size: 0;
+	color: #969696;
+	display: inline-block
+}
+
+.note .post .comment-list .tool-group a:hover {
+	color: #333
+}
+
+body.reader-night-mode .note .post .comment-list .tool-group a:hover {
+	color: #c8c8c8
+}
+
+.note .post .comment-list .tool-group a i {
+	margin-right: 5px;
+	font-size: 18px;
+	vertical-align: middle
+}
+
+.note .post .comment-list .tool-group a span {
+	vertical-align: middle;
+	font-size: 14px
+}
+
+.note .post .comment-list .normal-comment-list {
+	margin-top: 30px
+}
+
+.note .post .comment-list .normal-comment-list .top-title .author-only {
+	margin-left: 10px;
+	padding: 4px 8px;
+	font-size: 12px;
+	color: #969696;
+	border: 1px solid #e1e1e1;
+	border-radius: 12px
+}
+
+.note .post .comment-list .normal-comment-list .top-title .author-only.active {
+	color: #fff;
+	border: 1px solid #ea6f5a;
+	background-color: #ea6f5a
+}
+
+.note .post .comment-list .normal-comment-list .top-title .close-btn {
+	margin-left: 10px;
+	font-size: 12px;
+	color: #969696
+}
+
+.note .post .comment-list .normal-comment-list .top-title .pull-right a {
+	margin-left: 10px;
+	font-size: 12px;
+	font-weight: 400;
+	color: #969696;
+	display: inline-block
+}
+
+.note .post .comment-list .normal-comment-list .top-title .pull-right .active,.note .post .comment-list .normal-comment-list .top-title .pull-right a:hover {
+	color: #2f2f2f
+}
+
+.note .post .comment-list .normal-comment-list .close-comment,.note .post .comment-list .normal-comment-list .no-author-comment,.note .post .comment-list .normal-comment-list .no-comment {
+	width: 226px;
+	height: 92px;
+	margin: 30px auto 20px;
+	background: url(//cdn2.jianshu.io/assets/web/icon_comment_no-1b12627d360515e52c3c4dfc2f6b0eb7.png) no-repeat;
+	background-size: contain
+}
+
+.note .post .comment-list .normal-comment-list .close-comment {
+	background: url(//cdn2.jianshu.io/assets/web/icon_comment_close-1977c458f0eb7900b53b422cac10c713.png) no-repeat;
+	background-size: contain
+}
+
+.note .post .comment-list .normal-comment-list .no-author-comment {
+	background: url(//cdn2.jianshu.io/assets/web/icon_comment_no_writer-511f994389aa2409f189d680b13ff5ed.png) no-repeat;
+	background-size: contain
+}
+
+.note .post .comment-list .normal-comment-list .text {
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 12px;
+	color: #969696
+}
+
+.note .post .comment-list .normal-comment-list .text a,.note .post .comment-list .normal-comment-list .text a:hover {
+	color: #3194d0
+}
+
+.note .post .comment-list .normal-comment-list .open-block {
+	padding: 30px 0 50px;
+	text-align: center;
+	border-top: 1px solid #f0f0f0
+}
+
+.note .post .comment-list .normal-comment-list .open-block .open-btn {
+	padding: 10px 20px;
+	font-size: 16px;
+	color: #969696;
+	border: 1px solid #dcdcdc;
+	border-radius: 20px
+}
+
+.note .post .comment-list .sub-comment-list {
+	margin-top: 20px;
+	padding: 5px 0 5px 20px;
+	border-left: 2px solid #d9d9d9
+}
+
+.note .post .comment-list .sub-comment-list p {
+	margin: 0 0 5px;
+	font-size: 14px;
+	line-height: 1.5
+}
+
+.note .post .comment-list .sub-comment-list a,.note .post .comment-list .sub-comment-list a:hover {
+	color: #3194d0
+}
+
+.note .post .comment-list .sub-comment-list .new-comment {
+	margin: 0
+}
+
+.note .post .comment-list .sub-comment-list .new-comment .sign-container,.note .post .comment-list .sub-comment-list .new-comment textarea {
+	width: 100%
+}
+
+.note .post .comment-list .sub-comment-list .new-comment .emoji {
+	margin: 15px 0 0
+}
+
+.note .post .comment-list .sub-comment-list .emoji-modal-wrap .emoji-modal {
+	left: -48px
+}
+
+.note .post .comment-list .sub-comment {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	border-bottom: 1px dashed #f0f0f0
+}
+
+.note .post .comment-list .sub-comment:last-child {
+	margin: 0;
+	padding: 0;
+	border: none
+}
+
+.note .post .comment-list .sub-comment .report,.note .post .comment-list .sub-comment .subcomment-delete {
+	float: right;
+	margin: 1px 0 0 10px;
+	display: none
+}
+
+.note .post .comment-list .sub-comment:hover .report,.note .post .comment-list .sub-comment:hover .subcomment-delete {
+	display: inherit
+}
+
+.note .post .comment-list .sub-tool-group {
+	font-size: 12px;
+	color: #969696
+}
+
+.note .post .comment-list .sub-tool-group a {
+	margin-left: 10px;
+	color: #969696
+}
+
+.note .post .comment-list .sub-tool-group a:hover {
+	color: #333
+}
+
+.note .post .comment-list .sub-tool-group a i {
+	margin-right: 5px;
+	font-size: 14px;
+	vertical-align: middle
+}
+
+.note .post .comment-list .sub-tool-group a span {
+	vertical-align: middle
+}
+
+.note .post .comment-list .more-comment {
+	font-size: 14px;
+	color: #969696;
+	border: none
+}
+
+.note .post .comment-list .sub-comment-list .add-comment-btn {
+	color: #969696
+}
+
+.note .post .comment-list .sub-comment-list .add-comment-btn:hover {
+	color: #333
+}
+
+.note .post .comment-list .sub-comment-list .add-comment-btn i {
+	margin-right: 5px
+}
+
+.note .post .comment-list .line-warp {
+	margin-left: 10px;
+	padding-left: 10px;
+	border-left: 1px solid #d9d9d9
+}
+
+.note .post .comment-list .new-comment {
+    position: relative;
+    margin-left: 48px;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+		
+	</style>
+<style type="text/css">
+.v-tooltip-container,
+.v-tooltip-content {
+  display: inline-block;
+}
+.v-tooltip-container {
+  position: relative;
+}
+.v-tooltip-container .v-tooltip-content {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+.v-tooltip-container .v-tooltip-wrap {
+    position: absolute;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-top {
+      bottom: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding-bottom: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-bottom {
+      top: 100%;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      padding-top: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-left {
+      top: 50%;
+      right: 100%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      padding-right: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-right {
+      top: 50%;
+      left: 100%;
+      -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+              transform: translateY(-50%);
+      padding-left: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-top-start {
+      bottom: 100%;
+      left: 0;
+      padding-bottom: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-top-end {
+      bottom: 100%;
+      right: 0;
+      padding-bottom: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-bottom-start {
+      top: 100%;
+      left: 0;
+      padding-top: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-bottom-end {
+      top: 100%;
+      right: 0;
+      padding-top: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-left-start {
+      top: 0;
+      right: 100%;
+      padding-right: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-left-end {
+      bottom: 0;
+      right: 100%;
+      padding-right: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-right-start {
+      top: 0;
+      left: 100%;
+      padding-left: 10px;
+}
+.v-tooltip-container .v-tooltip-wrap.v-tooltip-wrap-right-end {
+      bottom: 0;
+      left: 100%;
+      padding-left: 10px;
+}
+</style>
+	<header class="intro-header">
+		<!-- Signature -->
+		<div id="signature">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+						<div class="post-heading">
+							<div class="tags">
+
+								<a class="tag" href="/tags/#随笔" title="随笔">随笔</a>
+
+							</div>
+							<h1 id="">[${blog.categoryName}] ${blog.title}</h1>
+							<h2 class="subheading" id="-1"></h2>
+							<span class="meta">
+                            Posted by 胡伟煌 on
+                            ${blog.createTime?date}
+                        </span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-default navbar-custom navbar-fixed-top is-fixed is-visible">
+		<div class="container-fluid">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+				<a class="navbar-brand" href="/">胡伟煌</a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<!-- Known Issue, found by Hux:
+            <nav>'s height woule be hold on by its content.
+            so, when navbar scale out, the <nav> will cover tags.
+            also mask any touch event of tags, unfortunately.
+        -->
+			<div id="huxblog_navbar">
+				<div class="navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="/">Home</a>
+						</li>
+
+						<li>
+							<a href="/about/">About</a>
+						</li>
+
+						<li>
+							<a href="/archive/">Archives</a>
+						</li>
+
+						<li>
+							<a href="/tags/">Tags</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	<!-- Post Content -->
+	<article>
+		<div class="container">
+			<div class="row">
+
+				<!-- Post Container -->
+				<div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+				${blog.content}	
+				</div>
+				<!-- 评论区域 -->
+				<div class="note" id="commentbox">
+					<div class="post">
+						<div id="comment-list" class="comment-list">
+							<div>
+								<form class="new-comment">
+									<a class="avatar"><img
+										src="//cdn2.jianshu.io/assets/default_avatar/10-e691107df16746d4a9f3fe9496fd1848.jpg"></a>
+									<textarea v-model="content" id="content" placeholder="写下你的评论..."></textarea>
+									<div class="write-function-block">
+										<div data-v-b36e9416=""  class="emoji-modal-wrap">
+											<a data-v-b36e9416="" class="emoji"><i data-v-b36e9416=""
+												class="iconfont ic-comment-emotions"></i></a>
+											<!---->
+										</div>
+										<div class="hint" >Ctrl+Enter 发表</div>
+										<a class="btn btn-send" @click="saveComment">发送</a>
+									</div>
+								</form>
+								<!---->
+								<div class="vemojis">
+						<i name="grinning" title="grinning">😀</i><i name="smiley"
+							title="smiley">😃</i><i name="smile" title="smile">😄</i><i
+							name="grin" title="grin">😁</i><i name="laughing"
+							title="laughing">😆</i><i name="sweat_smile" title="sweat_smile">😅</i><i
+							name="joy" title="joy">😂</i><i name="blush" title="blush">😊</i><i
+							name="innocent" title="innocent">😇</i><i name="wink"
+							title="wink">😉</i><i name="relieved" title="relieved">😌</i><i
+							name="heart_eyes" title="heart_eyes">😍</i><i
+							name="kissing_heart" title="kissing_heart">😘</i><i
+							name="kissing" title="kissing">😗</i><i
+							name="kissing_smiling_eyes" title="kissing_smiling_eyes">😙</i><i
+							name="kissing_closed_eyes" title="kissing_closed_eyes">😚</i><i
+							name="yum" title="yum">😋</i><i
+							name="stuck_out_tongue_winking_eye"
+							title="stuck_out_tongue_winking_eye">😜</i><i
+							name="stuck_out_tongue_closed_eyes"
+							title="stuck_out_tongue_closed_eyes">😝</i><i
+							name="stuck_out_tongue" title="stuck_out_tongue">😛</i><i
+							name="sunglasses" title="sunglasses">😎</i><i name="smirk"
+							title="smirk">😏</i><i name="unamused" title="unamused">😒</i><i
+							name="disappointed" title="disappointed">😞</i><i name="pensive"
+							title="pensive">😔</i><i name="worried" title="worried">😟</i><i
+							name="confused" title="confused">😕</i><i name="persevere"
+							title="persevere">😣</i><i name="confounded" title="confounded">😖</i><i
+							name="tired_face" title="tired_face">😫</i><i name="weary"
+							title="weary">😩</i><i name="angry" title="angry">😠</i><i
+							name="rage" title="rage">😡</i><i name="no_mouth"
+							title="no_mouth">😶</i><i name="neutral_face"
+							title="neutral_face">😐</i><i name="expressionless"
+							title="expressionless">😑</i><i name="hushed" title="hushed">😯</i><i
+							name="frowning" title="frowning">😦</i><i name="anguished"
+							title="anguished">😧</i><i name="open_mouth" title="open_mouth">😮</i><i
+							name="astonished" title="astonished">😲</i><i name="dizzy_face"
+							title="dizzy_face">😵</i><i name="flushed" title="flushed">😳</i><i
+							name="scream" title="scream">😱</i><i name="fearful"
+							title="fearful">😨</i><i name="cold_sweat" title="cold_sweat">😰</i><i
+							name="cry" title="cry">😢</i><i name="disappointed_relieved"
+							title="disappointed_relieved">😥</i><i name="sob" title="sob">😭</i><i
+							name="sweat" title="sweat">😓</i><i name="sleepy" title="sleepy">😪</i><i
+							name="sleeping" title="sleeping">😴</i><i name="mask"
+							title="mask">😷</i><i name="smiling_imp" title="smiling_imp">😈</i><i
+							name="smiley_cat" title="smiley_cat">😺</i><i name="smile_cat"
+							title="smile_cat">😸</i><i name="joy_cat" title="joy_cat">😹</i><i
+							name="heart_eyes_cat" title="heart_eyes_cat">😻</i><i
+							name="smirk_cat" title="smirk_cat">😼</i><i name="kissing_cat"
+							title="kissing_cat">😽</i><i name="scream_cat"
+							title="scream_cat">🙀</i><i name="crying_cat_face"
+							title="crying_cat_face">😿</i><i name="pouting_cat"
+							title="pouting_cat">😾</i><i name="cat" title="cat">🐱</i><i
+							name="mouse" title="mouse">🐭</i><i name="cow" title="cow">🐮</i><i
+							name="monkey_face" title="monkey_face">🐵</i><i name="hand"
+							title="hand">✋</i><i name="fist" title="fist">✊</i><i name="v"
+							title="v">✌️</i><i name="point_up" title="point_up">👆</i><i
+							name="point_down" title="point_down">👇</i><i name="point_left"
+							title="point_left">👈</i><i name="point_right"
+							title="point_right">👉</i><i name="facepunch" title="facepunch">👊</i><i
+							name="wave" title="wave">👋</i><i name="clap" title="clap">👏</i><i
+							name="open_hands" title="open_hands">👐</i><i name="+1"
+							title="+1">👍</i><i name="-1" title="-1">👎</i><i name="ok_hand"
+							title="ok_hand">👌</i><i name="pray" title="pray">🙏</i><i
+							name="ear" title="ear">👂</i><i name="eyes" title="eyes">👀</i><i
+							name="nose" title="nose">👃</i><i name="lips" title="lips">👄</i><i
+							name="tongue" title="tongue">👅</i><i name="heart" title="heart">❤️</i><i
+							name="cupid" title="cupid">💘</i><i name="sparkling_heart"
+							title="sparkling_heart">💖</i><i name="star" title="star">⭐️</i><i
+							name="sparkles" title="sparkles">✨</i><i name="zap" title="zap">⚡️</i><i
+							name="sunny" title="sunny">☀️</i><i name="cloud" title="cloud">☁️</i><i
+							name="snowflake" title="snowflake">❄️</i><i name="umbrella"
+							title="umbrella">☔️</i><i name="coffee" title="coffee">☕️</i><i
+							name="airplane" title="airplane">✈️</i><i name="anchor"
+							title="anchor">⚓️</i><i name="watch" title="watch">⌚️</i><i
+							name="phone" title="phone">☎️</i><i name="hourglass"
+							title="hourglass">⌛️</i><i name="email" title="email">✉️</i><i
+							name="scissors" title="scissors">✂️</i><i name="black_nib"
+							title="black_nib">✒️</i><i name="pencil2" title="pencil2">✏️</i><i
+							name="x" title="x">❌</i><i name="recycle" title="recycle">♻️</i><i
+							name="white_check_mark" title="white_check_mark">✅</i><i
+							name="negative_squared_cross_mark"
+							title="negative_squared_cross_mark">❎</i><i name="m" title="m">Ⓜ️</i><i
+							name="i" title="i">ℹ️</i><i name="tm" title="tm">™️</i><i
+							name="copyright" title="copyright">©️</i><i name="registered"
+							title="registered">®️</i>
+					</div>
+								
+							</div>
+							<!---->
+							<div class="comments-placeholder" style="display: none;">
+								<div class="author">
+									<div class="avatar"></div>
+									<div class="info">
+										<div class="name"></div>
+										<div class="meta"></div>
+									</div>
+								</div>
+								<div class="text"></div>
+								<div class="text animation-delay"></div>
+								<div class="tool-group">
+									<i class="iconfont ic-zan-active"></i>
+									<div class="zan"></div>
+									<i class="iconfont ic-list-comments"></i>
+									<div class="zan"></div>
+								</div>
+							</div>
+							<div id="normal-comment-list" class="normal-comment-list">
+							
+								<div>
+									<div>
+										<div class="top-title">
+											{{ctotal}}
+											<span>{{comments.length}}条评论</span> <a class="author-only">只看作者</a> <a
+												class="close-btn" style="display: none;">关闭评论</a>
+											<div class="pull-right">
+												<a class="active">按时间倒序</a><a class="">按时间正序</a>
+											</div>
+										</div>
+									</div>
+									<!---->
+									<!---->
+									
+									
+									<div :id="comment-comment.id" :key="index" v-for="(comment,index) in comments" class="comment">
+										<div>
+											<div class="author">
+												<div data-v-f3bf5228="" class="v-tooltip-container"
+													style="z-index: 0;">
+													<div class="v-tooltip-content">
+														<a href="javascript:;" target="_blank" class="avatar"><img
+															:src="comment.headerPic"></a>
+													</div>
+													<!---->
+												</div>
+												<div class="info">
+													<a href="javascript:;" target="_blank" class="name">{{comment.username}}</a>
+													<!---->
+													<!---->
+													<div class="meta">
+														<span>{{comments.length-index}}楼 · {{comment.createTime}}</span>
+													</div>
+												</div>
+											</div>
+											<div class="comment-wrap">
+												<p>{{comment.content}}</p>
+												<div class="tool-group">
+													<a data-v-cdecbe24="" id="like-button-30411832"
+														class="like-button"><span data-v-cdecbe24="">赞</span></a>
+													<a class=""><i class="iconfont ic-comment"></i> <span>回复</span></a>
+													<a class="report"><span>举报</span></a>
+													<!---->
+												</div>
+											</div>
+										</div>
+										<!-- 子评论 -->
+										<div class="sub-comment-list">
+											<div  v-if="comment.children && comment.children.length >0" id="comment-30559842" v-for="(cm,cindex) in comment.children" :key="cindex" class="sub-comment">
+												<p>
+												<div data-v-f3bf5228="" class="v-tooltip-container"
+													style="z-index: 0;">
+													<div class="v-tooltip-content">
+														<a href="/u/7c96b80b32f8" target="_blank">{{cm.username}}</a>：
+													</div>
+													<!---->
+												</div>
+												<span>{{cm.content}}</span>
+												<div class="sub-tool-group">
+													<span>{{cm.createTime}}</span> <a class=""><i
+														class="iconfont ic-comment"></i> <span>回复</span></a>
+													<!---->
+													<a class="subcomment-delete"><span>删除</span></a>
+												</div>
+											</div>
+											<div class="sub-comment more-comment">
+												<a class="add-comment-btn" :cindex="index" @click="expand"><i
+													class="iconfont ic-subcomment" ></i>添加新评论</a>
+												<!---->
+												<!---->
+												<!---->
+											</div>
+											<div v-show="comment.flag">
+												<form class="new-comment">
+													<!---->
+													<textarea placeholder="写下你的评论..." :id="'content'+comment.id"></textarea>
+													<div class="write-function-block">
+														<div data-v-b36e9416="" class="emoji-modal-wrap">
+															<a data-v-b36e9416="" class="emoji"><i
+																data-v-b36e9416="" class="iconfont ic-comment-emotions"></i></a>
+															<!---->
+														</div>
+														<div class="hint">Ctrl+Enter 发表</div>
+														<a class="btn btn-send" :pid="comment.id" :ruserid="3"  :pindex="index"  @click="saveChildren">发送</a> <a class="cancel" :cindex="index" @click="expand">取消</a>
+													</div>
+												</form>
+												<!---->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!---->
+							<div>
+								<!---->
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- 评论区域 end-->
+			</div>
+		</div>
+	</article>
+	<!-- Footer -->
+	<#include "commons/footer.html"/>
+	<!-- Footer -->
+	<!-- 引入公共js模板 -->
+	<#include "commons/js.html"/>
+	<script>var blogId = "${blog.id}";</script>	
+	<script>
+	
+		 /*
+		 	comments的数据结果如下：
+		 	[
+		 		
+		 		{0
+		 			id:1,
+		 			content:"好",
+		 			userId:1,
+		 			blogId:28,
+		 			children:[
+		 				{
+		 					id:"4",
+		 					content:"很好",
+		 					blogId:28,
+		 					userId:3
+		 				},
+		 				{
+		 					id:"4",
+		 					content:"很好",
+		 					blogId:28,
+		 					userId:3
+		 				}
+		 			]
+		 		},
+		 		{1
+		 			id:2,
+		 			content:"没毛病",
+		 			userId:1,
+		 			blogId:28,
+		 			children:[]
+		 		}
+		 		
+		 	]
+		 	
+			vue---mvp----模板技术（mustche js模板引擎 ）+对象监听-）
+			
+			
+			围绕daata进行值获取和赋值:
+			v-bind: 从data中取出数据渲染到页面上去
+			v-model: 把form表单元素中(text,password,checkbox,textarea,radio,select)值赋值给data中属性 
+			v-model出现的原因是什么？去dom
+			//document.getElementById("content").value;
+			//$("#content").val();
+			v-on:事件类型
+			
+		 */
+	
+		var vue = new Vue({
+			el:"#commentbox",//指定vuejs从什么范围去解析 vue语法和语法糖
+			data:{
+				blogId:blogId,
+				content:"",
+				title:"hello vue",
+				pageNo:1,
+				pageSize:10,
+				comments:[]
+			},
+			created:function(){
+				var vueobj = this;
+				//初始化加载
+				this.loadComment();
+				document.onkeydown = function(e){
+					if(e.keyCode==13){
+						vueobj.saveComment();
+					}
+				}
+			},
+			computed:{
+				ctotal:function(){
+					var tcomments = this.$data.comments;
+					var total = tcomments.length;
+					for(var i=0;i<tcomments.length;i++){
+						if(tcomments[i].children){
+							total += tcomments[i].children.length;
+						}
+					}
+					return total;
+				}
+			},
+			methods:{
+				//查询评论
+				loadComment:function(){
+					var blogId = this.$data.blogId;
+					var pageNo = this.$data.pageNo;
+					var pageSize = this.$data.pageSize;
+					this.$http.get(basePath+"/comment/queryAll/"+blogId+"/"+pageNo+"/"+pageSize).then(function(response){
+						
+						var datas = response.body.data.list;
+						for(var i=0;i<datas.length;i++){
+							datas[i].flag = true;
+						}
+						
+						console.log(datas);
+						
+						this.$data.comments = datas;
+					});
+				},
+				//保存一级评论
+				saveComment:function(){
+					var content = this.$data.content;
+					var blogId = this.$data.blogId;
+					var params = {content:content,blogId:blogId,parentId:0}
+					
+					if(!content){
+						alert("请输入评论...");
+						document.getElementById("content").focus();
+						return;
+					}
+					
+					this.$http.get(basePath+"/comment/save",{params:params}).then(function(response){
+						if(response.body.status==200){
+							//补齐数据格式
+							response.body.data.children = [];
+							document.getElementById("content").value = "";
+							//往前添加
+							var data = response.body.data;
+							data.flag = true;
+							this.$data.comments.unshift(data);
+						}
+					});
+				},
+				//保存二级评论
+				saveChildren:function(event){
+					//var value = event.target.parentElement.parentElement.children[0].value;
+					//获取当前评论的索引
+					var pindex = event.target.getAttribute("pindex");
+					
+					//获取一级评论的ID
+					var parentId = event.target.getAttribute("pid");
+					//获取评论内容
+					var content = document.getElementById("content"+parentId).value;
+					if(!content){
+						alert("请输入评论...");
+						document.getElementById("content"+parentId).focus();
+						return;
+					}
+					//回复userID
+					var replayUserid = event.target.getAttribute("ruserid");
+					//评论的文章ID
+					var blogId = this.$data.blogId;
+					//设置参数
+					var params = {content:content,blogId:blogId,parentId:parentId,replayUserid:replayUserid}
+					//var params = {content,blogId,parentId,replayUserid};//e6
+					
+					this.$http.get(basePath+"/comment/save",{params:params}).then(function(response){
+						if(response.body.status==200){
+							//附加数据
+							this.$data.comments[pindex].children.push(response.body.data);
+							document.getElementById("content"+parentId).value = "";
+						}
+					});
+					
+				},
+				expand:function(event){
+					//event.target 当前鼠标触发的那个元素，
+					var cindex = event.target.getAttribute("cindex");
+					this.$data.comments[cindex].flag = !this.$data.comments[cindex].flag; 
+				}
+			}
+		});	
+	
+	</script>
+
+</body>
+</html>

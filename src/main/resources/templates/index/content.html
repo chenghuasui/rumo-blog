@@ -1,0 +1,39 @@
+<!-- Main Content -->
+<!-- Main Content -->
+
+<div class="container" id="app">
+	<div class="row">
+
+		<!-- USE SIDEBAR -->
+		<!-- Post Container -->
+		<div class="
+              col-lg-8 col-lg-offset-1
+              col-md-8 col-md-offset-1
+              col-sm-12
+              col-xs-12
+              post-container
+          ">
+         	  <div class="post-preview-container">
+         	    <!-- :class="{'red':index%2==0,'green':index%2!=0}"  -->	
+		        <div class="post-preview" v-for="(blog,index) in blogs" :key="index"> 
+		         		<a target="_blank" :title="blog.title" v-bind:href="'${basePath}/detail/'+blog.id">
+							<h2 class="post-title">[{{index+1}}{{blog.categoryName}}] {{blog.title}}</h2>
+							<h3 class="post-subtitle"></h3>
+							<div class="post-content-preview"><span v-html="blog.description"></span></div>
+						</a>
+						<p class="post-meta" style="margin: 10px 0;">Posted by mofeng on {{blog.createTime|formatDate("yyyy/MM/dd")}}
+						</p>
+						<div class="tags">
+							<a :href="'/tags/#'+blog.categoryName" v-bind:title="blog.categoryName">{{blog.categoryName}}</a>
+						</div>
+					</div>
+				</div>
+				<div id="page">
+					<vue-nav v-bind:cur="pageNum" v-bind:all="pages" v-bind:callback="callback"></vue-nav>
+				</div>
+			</div>	
+		<!-- 分页 -->
+			<#include "index/rightsilder.html"/>
+		</div>
+		
+</div>
